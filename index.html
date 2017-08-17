@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>仿迅雷看看</title>
+	<link rel="stylesheet" type="text/css" href="./css/public.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script> -->
+	<script type="text/javascript" src="./js/jquery-1.7.2.min.js" ></script>
+	<script type="text/javascript" src="./js/js.js" ></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div id="header">
+		<div class="header_box">
+			<!-- logo开始 -->
+			<div class="logo">
+				<a href="" target="_blank"></a>
+			</div>
+			<!-- logo结束 -->
+			<!-- 搜索框开始 -->
+			<div class="search">
+				<input type="text" class="search_text" name="">
+				<a href="" target="_blank"></a>
+				<input type="submit" value="搜索" class="search_btn" name="">
+			</div>
+			<!-- 搜索框结束 -->
+			<!-- 用户区域开始 -->
+			<div class="userarea">
+				<div class="downloadAPP"><a href="" target="_blank"><i class="icon_download_APP"></i>APP</a></div>
+				<div class="download_client"><a href="" target="_blank"><i class="icon_download_client"></i>客户端</a></div>
+				<div class="record"><a href="" target="_blank"><i class="icon_record"></i>记录</a></div>
+				<div class="collect"><a href="" target="_blank"><i class="icon_collect"></i>收藏</a></div>
+				<div class="vip_dredge"><a href="" target="_blank"><i class="icon_vip_dredge"></i>开通会员</a></div>
+				<div class="login_register"><i class="icon_login_register"></i><a href="" target="_blank">登录</a>/<a href="" target="_blank">注册</a></div>
+				<!-- 记录收藏区域开始 -->
+				<div class="hidder_box">
+					<i class="arrow_box_r"></i><i class="arrow_box_c"></i>
+					<div class="hidder_r_c">
+						<span class="hidder_span_c_r">请登录，查看收藏内容</span>
+						<input type="button" value="登录" name="" class="login_btn">
+						<span class="hidden_see">大家都在看</span>
+						<div class="image_see_box">
+							<div class="img_l">
+								<img src="./images/er.jpg">
+								<span>二炮手</span>
+							</div>
+							<div class="img_m">
+								<img src="./images/ren.jpg">
+								<span>新人肉叉烧包</span>
+							</div>
+							<div class="img_r">
+								<img src="./images/shan.jpg">
+								<span>杉杉来了</span>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<!-- 记录收藏区域结束 -->
+				<!-- APP下载隐藏区域开始 -->
+				<div class="hidder_download">
+					<i class="arrow_box"></i>
+					<img class="code_img" src="./images/qr_kk_mb.png">
+					<span>下载响巢看看APP</span>
+					<input type="button" class="product_enter_btn" value="进入产品中心" name="">
+				</div>
+				<!-- APP下载隐藏区域结束 -->
+			</div>
+			<!-- 用户区域结束 -->
+		</div>
+	</div>
+	<!-- 头部结束 -->
+
+	<!-- 导航栏开始 -->
+	<div id="nav">
+		<div class="nav_box">
+			<!-- 导航栏左边开始 -->
+			<ul class="nav_box_l">
+				<a href="" target="_blank"><li class="first_li">首页</li></a>
+				<a href="" target="_blank"><span class="boundary">|</span></a>
+				<a href="" target="_blank"><li>娱乐</li></a>
+				<a href="" target="_blank"><li>电视剧</li></a>
+				<a href="" target="_blank"><li>电影</li></a>
+				<a href="" target="_blank"><li>网络电影</li></a>
+				<a href="" target="_blank"><li>综艺</li></a>
+				<a href="" target="_blank"><li>动漫</li></a>
+				<a href="" target="_blank"><li>纪录片</li></a>
+				<a href="" target="_blank"><li>公开课</li></a>
+				<a href="" target="_blank"><li class="boundary_b">资讯</li></a>
+				<a href="" target="_blank"><li>搞笑</li></a>
+				<a href="" target="_blank"><li>时尚</li></a>
+				<a href="" target="_blank"><li>音乐</li></a>
+			</ul>
+			<!-- 导航栏左边结束 -->
+			<!-- 导航栏右边开始 -->
+			<ul class="nav_box_r">
+				<span class="boundary">|</span>
+				<a href="" target="_blank"><li>明星空间</li></a>	
+				<a href="" target="_blank"><li><i class="icon_vip"></i>会员</li></a>
+			</ul>
+			<!-- 导航栏右边结束 -->
+		</div>
+		
+	</div>
+	<!-- 导航栏结束 -->
+	<!-- 轮播图开始 -->
+	<div id="focus_background">
+		<div id="focus_box">
+			<ul class="smal_pic">
+				<li><a href="" target="_blank" title="电影圆你童话梦 重温经久不衰的经典爱情故事 "><img src="./images/img_1.png" alt="电影圆你童话梦 重温经久不衰的经典爱情故事 " backImg="./images/backImg_1.jpg" backColor="#1A3150"></a></li>
+				<li><a href="" target="_blank" title="斯琴格日乐一展酒歌神韵 克尔曼向非遗致敬 "><img src="./images/img_2.jpg" alt="斯琴格日乐一展酒歌神韵 克尔曼向非遗致敬 " backImg="./images/backImg_2.jpg" backColor="#060297"></a></li>
+				<li><a href="" target="_blank" title="《奥林匹斯的陷落》史上最强袭击 白宫一夜陷落 "><img src="./images/img_3.jpg" alt="《奥林匹斯的陷落》史上最强袭击 白宫一夜陷落 " backImg="./images/backImg_3.jpg" backColor="#1D1E22"></a></li>
+				<li><a href="" target="_blank" title="《卧底》傅程鹏开启高颜值谍战时代 "><img src="./images/img_4.jpg" alt="《卧底》傅程鹏开启高颜值谍战时代 " backImg="./images/backImg_4.jpg" backColor="#1A1A18"></a></li>
+				<li><a href="" target="_blank" title="《画江湖之不良人第二季》林轩阻战险丧命 兄弟冰释了恩怨 "><img src="./images/img_5.jpg" alt="《画江湖之不良人第二季》林轩阻战险丧命 兄弟冰释了恩怨" backImg="./images/backImg_5.jpg" backColor="#030B1E"></a></li>
+				<li><a href="" target="_blank" title="《丛林玩过界》阴宅夺命大保健"><img src="./images/img_6.jpg" alt="《丛林玩过界》阴宅夺命大保健" backImg="./images/backImg_6.jpg" backColor="#000000"></a></li>
+				<li><a href="" target="_blank" title="装备回收账号卖钱好过上班"><img src="./images/img_7.jpg" alt="装备回收账号卖钱好过上班" backImg="./images/backImg_7.jpg" backColor="#000000"></a></li>
+				<li><a href="" target="_blank" title="《阿黛拉的非凡冒险》美女骑大鸟去冒险 吕克贝松玩法式幽默 " backImg="./images/backImg_8.jpg "><img src="./images/img_8.jpg" alt="《阿黛拉的非凡冒险》美女骑大鸟去冒险 吕克贝松玩法式幽默 " backImg="./images/backImg_8.jpg" backColor="#E2EDF3"></a></li>
+				<!-- <li><a href="" target="_blank"><img src="./images/img_9.jpg" alt="《勇敢的心》兄弟残杀 旧爱相逢" backImg="./images/backImg_9.jpg" backColor="#010101"></a></li> -->
+			</ul>
+
+		</div>
+	</div>
+	<!-- 轮播图结束 -->
+	<!-- 今日看点开始 -->
+	<div id="today_box">
+		<!-- 今日看点顶部文字开始 -->
+		<div class="news_sort_box">
+			<h2>今日看点</h2>
+			<div class="sortting">
+				<a href="" target="_blank">3月观影指南:炫酷大片不容错过</a>
+				|
+				<a href="" target="_blank">致命诱惑!这些制服妹子好美</a>
+				|
+				<a href="" target="_blank">《天籁之声》世界上最动听的歌</a>
+			</div>
+		</div>
+		<!-- 今日看点顶部文字结束 -->
+		<!-- 今日看点图片新闻大盒子开始 -->
+		<div class="news_box">
+			<!-- 今日看点左边盒子开始 -->
+			<div class="news_box_left">
+				<div class="news_box_mini">
+					<img src="./images/jrkd/left.jpg" alt="CBA球员上演现实版扶不扶 做好事反被诬陷撞人！">
+					<ul>
+						<li>
+							<a href="" target="_blank">CBA球员上演现实版扶不扶 做好事反被诬陷撞人！</a>
+							<p>被扶者：忘了当时的情况</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 今日看点左边盒子结束 -->
+			<!-- 今日看点右边大盒子开始 -->
+			<div class="news_box_div">
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/jrkd/right_1.jpg" alt="惊！男子用就诊卡盗刷20万">
+							<a class="bq" href="" target="_blank">警示</a>
+							<ul>
+								<li>
+									<a href="" target="_blank">惊！男子用就诊卡盗刷20万</a>
+									<p>你的银行卡该升级了！</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/jrkd/right_2.gif" alt="摩托车手空翻跃上轿车顶">
+							<ul>
+								<li>
+									<a href="" target="_blank">摩托车手空翻跃上轿车顶</a>
+									<p>一看就是练过“杂技”的</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+			
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/jrkd/right_3.jpg" alt="男子挖到估价4亿巨型钻石">
+							<ul>
+								<li>
+									<a href="" target="_blank">男子挖到估价4亿巨型钻石</a>
+									<p>事后竟主动上交国家 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/jrkd/right_4.jpg" alt="陈妍希产后首亮相秀美腿 ">
+							<a class="bq" href="" target="_blank">星闻</a>
+							<ul>
+								<li>
+									<a href="" target="_blank">陈妍希产后首亮相秀美腿 </a>
+									<p>笑容甜美似少女 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/jrkd/right_5.jpg" alt="葛天穿一字毛衫饮红酒">
+							<ul>
+								<li>
+									<a href="" target="_blank">葛天穿一字毛衫饮红酒</a>
+									<p>露迷人锁骨妩媚动人 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+			
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/jrkd/right_6.jpg" alt="良心剧《大秦帝国之崛起》">
+							<ul>
+								<li>
+									<a href="" target="_blank">良心剧《大秦帝国之崛起》</a>
+									<p>战神白起：一个高清美男子 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 今日看点右边大盒子结束 -->
+		</div>
+		<!-- 今日看点图片新闻大盒子结束 -->
+
+	</div>
+	<!-- 今日看点结束 -->
+
+	<!-- 娱乐头条开始 -->
+	<div id="entertainment">
+		<!-- 娱乐头条顶部文字开始 -->
+		<div class="news_sort_box">
+			<h2>娱乐头条</h2>
+			<div class="sortting">
+				<a href="" target="_blank">明星专访</a>
+				|
+				<a href="" target="_blank">八卦绯闻</a>
+				|
+				<a href="" target="_blank">娱乐大事件</a>
+				&nbsp;
+				<a href="" target="_blank">更多<span>&gt;</span></a>
+			</div>
+		</div>
+		<!-- 娱乐头条顶部文字结束 -->
+		<!-- 娱乐头条图片新闻大盒子开始 -->
+		<div class="news_box">
+			<!-- 娱乐头条大盒子开始 -->
+			<div class="news_box_div">
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/1.jpg" alt="朱茵谈爱情：错了就要放手 ">
+							<ul>
+								<li>
+									<a href="" target="_blank">朱茵谈爱情：错了就要放手 </a>
+									<p>先爱自己才能爱别人 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/2.jpg" alt="王思聪挺萧鼎与欢瑞开撕">
+							<ul>
+								<li>
+									<a href="" target="_blank">王思聪挺萧鼎与欢瑞开撕</a>
+									<p>只想疯狂捞金的农民 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/3.jpg" alt="王大陆参加真人秀海报出炉 ">
+							<ul>
+								<li>
+									<a href="" target="_blank">王大陆参加真人秀海报出炉 </a>
+									<p>是不是得罪了P图师  </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/4.jpg" alt="赛琳娜厌倦当IG人气王 ">
+							<ul>
+								<li>
+									<a href="" target="_blank">赛琳娜厌倦当IG人气王 </a>
+									<p>已将app删除  </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/5.jpg" alt="李晨与范冰冰好事近 ">
+							<ul>
+								<li>
+									<a href="" target="_blank">李晨与范冰冰好事近 </a>
+									<p>公开称想三年抱仨  </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/6.jpg" alt="昆凌挺4个月孕肚下腰">
+							<ul>
+								<li>
+									<a href="" target="_blank">昆凌挺4个月孕肚下腰</a>
+									<p>老公视角美得犯规  </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/7.jpg" alt="陈赫邓超发视频互相伤害 ">
+							<ul>
+								<li>
+									<a href="" target="_blank">陈赫邓超发视频互相伤害 </a>
+									<p>互指苍蝇鼹鼠  </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/8.jpg" alt="胡海泉跨界经商">
+							<ul>
+								<li>
+									<a href="" target="_blank">胡海泉跨界经商</a>
+									<p>宣布张学友朴树巡演计划 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/9.jpg" alt="郭晶晶夫妇平价小店吃饭   ">
+							<ul>
+								<li>
+									<a href="" target="_blank">郭晶晶夫妇平价小店吃饭 </a>
+									<p>挤坐二人桌神色淡然 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/yltt/10.jpg" alt="安以轩舒淇摄影师为一人 ">
+							<ul>
+								<li>
+									<a href="" target="_blank">安以轩舒淇摄影师为一人 </a>
+									<p>连球鞋都是同品牌  </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 今日看点右边大盒子结束 -->
+			<!-- 娱乐头条大盒子结束 -->
+		</div>
+		<!-- 娱乐头条图片新闻大盒子结束 -->
+
+	</div>
+	<!-- 娱乐头条结束 -->
+
+	<!-- 电视剧开始 -->
+	<div id="TV_box">
+		<!-- 电视剧顶部文字开始 -->
+		<div class="news_sort_box">
+			<h2>电视剧</h2>
+			<div class="sortting">
+				<a href="" target="_blank">偶像言情</a>
+				|
+				<a href="" target="_blank">军旅谍战</a>
+				|
+				<a href="" target="_blank">古装武侠</a>
+				&nbsp;
+				<a href="" target="_blank">更多<span>&gt;</span></a>
+			</div>
+		</div>
+		<div class="news_sort_box right">
+				<h2>热搜榜</h2>
+				<div class="sortting">
+					<a href="" target="_blank">更多<span>&gt;</span></a>
+				</div>
+		</div>
+		<!-- 电视剧顶部文字结束 -->
+		<!-- 电视剧图片新闻大盒子开始 -->
+		<div class="news_box">
+			<!-- 电视剧左边盒子开始 -->
+			<div class="news_box_left">
+				<div>
+					<div class="news_box_mini" style="display:inline;">
+						<img src="./images/dsj/left_1.jpg" alt="兵变1929">
+						<ul>
+							<li>
+								<a href="" target="_blank">兵变1929</a>
+								<p>乱世豪情显人性光辉<span class="num">35集全</span></p>
+							</li>
+						</ul>
+					</div>
+					<div class="news_box_mini">
+						<img src="./images/dsj/left_2.jpg" alt="兵变1929">
+						<ul>
+							<li>
+								<a href="" target="_blank">无敌铁桥三</a>
+								<p>释小龙饰洪拳大师<span class="num">40集全</span></p>
+							</li>
+						</ul>
+					</div>
+					<div class="news_box_mini">
+						<img src="./images/dsj/left_3.jpg" alt="兵变1929">
+						<ul>
+							<li>
+								<a href="" target="_blank">麻雀春天</a>
+								<p>蒋欣变革命女神 成功越狱<span class="num">35集全</span></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<span class="span_i left">&lt;</span>
+				<span class="span_i right">&gt;</span>
+				<div class="dot">
+					<ul >
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 电视剧左边盒子结束 -->
+			
+			<!-- 电视剧右边盒子开始 -->
+			<div id="list_box">
+				<div>
+					<ul>
+						<li><a href="" target="_blank"><i class="num">1</i>二炮手		<i class="icon_up"></i>		</a></li>
+						<li><a href="" target="_blank"><i class="num">2</i>爱你不放手	<i class="icon_up"></i>		</a></li>
+						<li><a href="" target="_blank"><i class="num">3</i>陆军一号		<i class="icon_down"></i>	</a></li>
+						<li><a href="" target="_blank"><i class="num">4</i>杉杉来了		<i class="icon_down"></i>	</a></li>
+						<li><a href="" target="_blank"><i class="num">5</i>粟裕大将(高清TV版)<i class="icon_down"></i></a></li>
+						<li><a href="" target="_blank"><i class="num">6</i>风云再起		<i class="icon_down"></i>	</a></li>
+						<li><a href="" target="_blank"><i class="num">7</i>下一站婚姻	<i class="icon_down"></i>	</a></li>
+						<li><a href="" target="_blank"><i class="num">8</i>隋唐英雄		<i class="icon_down"></i>	</a></li>
+						<li><a href="" target="_blank"><i class="num">9</i>粟裕大将		<i class="icon_down"></i>	</a></li>
+						<li><a href="" target="_blank"><i class="num">10</i>你是我的姐妹<i class="icon_down"></i>	</a></li>
+					</ul>
+				</div>
+					
+			</div>
+			<!-- 电视剧右边盒子结束 -->
+			<!-- 电视剧中间盒子开始 -->
+			<div class="news_box_div">
+				<ul>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/dsj/center_1.jpg" alt="东江英雄刘黑仔">
+							<a class="bq" href="" target="_blank">35集全</a>
+							<ul>
+								<li>
+									<a href="" target="_blank">东江英雄刘黑仔</a>
+									<p>广东大英雄刘黑仔</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/dsj/center_2.jpg" alt="守婚如玉">
+							<a class="bq" href="" target="_blank">42集全</a>
+							<ul>
+								<li>
+									<a href="" target="_blank">守婚如玉</a>
+									<p>打响婚姻保卫战</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/dsj/center_3.jpg" alt="战地狮吼">
+							<a class="bq" href="" target="_blank">32集全</a>
+							<ul>
+								<li>
+									<a href="" target="_blank">战地狮吼</a>
+									<p>抗日英雄传奇故事 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="news_box_li">
+						<div class="news_box_mini">
+							<img src="./images/dsj/center_4.jpg" alt="血战长空 ">
+							<a class="bq" href="" target="_blank">40集全</a>
+							<ul>
+								<li>
+									<a href="" target="_blank">血战长空 </a>
+									<p>飞行军人爱恨情仇 </p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- 电视剧中间盒子结束 -->
+		</div>
+		<!-- 电视剧图片新闻大盒子结束 -->
+
+	</div>
+	<!-- 电视剧结束 -->
+	<!-- 个人中心开始 -->
+	<div id="self_box">
+		<!-- 个人中心顶部文字开始 -->
+		<div class="news_sort_box">
+			<h2>个人中心</h2>
+			<div class="sortting">
+				<a class="guess" href="" target="_blank">猜您喜欢</a>
+				&nbsp;
+				<a class="recode" href="" target="_blank">观看记录</a>
+				&nbsp;
+				<a class="fav" href="" target="_blank">我的收藏</a>
+			</div>
+		</div>
+		<!-- 个人中心顶部文字结束-->
+		<!-- 图片开始 -->
+		<div class="self_area">
+			<div class="pic" style="display:inline;"  >
+				<ul>
+					<li><img src="./images/grzx/1.jpg" alt="幸福终点站"><h2>幸福终点站</h2><p class="in">斯皮尔伯格经典片</p><i class="icon_prevue">预告</i></li>
+					<li><img src="./images/grzx/2.jpg" alt="夏之五月"><h2>夏之五月</h2><p class="in">夏日温馨友情</p><i class="icon_prevue">预告</i></li>
+					<li><img src="./images/grzx/3.jpg" alt="罗马假日"><h2>罗马假日</h2><p class="in">美国经典爱情电影</p></li>
+					<li><img src="./images/grzx/4.jpg" alt="变身国王"><h2>变身国王</h2><p class="in">爆笑国王变毛驴</p><i class="icon_prevue">预告</i></li>
+					<li><img src="./images/grzx/5.jpg" alt="小屁孩日记3"><h2>小屁孩日记3</h2><p class="in">小屁孩暑期之旅</p></li>
+				</ul>
+			</div>
+			<div class="watch_record" >
+				<span class="hidder_span_c_r">请登录后，查看云观看记录</span>
+				<input type="button" value="登 录" name="" class="login_btn">
+			</div>
+			<div class="my_favourite">
+				<span class="hidder_span_c_r">请登录查看精彩收藏视频</span>
+				<input type="button" value="登 录" name="" class="login_btn">
+			</div>
+		</div>
+		
+		<!-- 切换开始 -->
+		<div class="kind">
+			<div class="interest">
+				<span class="title">您可能感兴趣的标签</span>
+				
+					<a href="" target="_blank">动作</a>
+					&nbsp;
+					<a href="" target="_blank">喜剧</a>
+					&nbsp;
+					<a href="" target="_blank">恐怖</a>
+					&nbsp;
+					<a href="" target="_blank">爱情</a>
+					&nbsp;
+					<a href="" target="_blank">剧情</a>
+					&nbsp;
+					<a href="" target="_blank">周星驰</a>
+					&nbsp;
+					<a href="" target="_blank">甄子丹</a>
+					&nbsp;
+					<a href="" target="_blank">香港</a>
+					&nbsp;
+					<a href="" target="_blank">台湾</a>
+			
+				<span class="end">点击标签可切换对应推送内容</span>
+			</div>
+		</div>
+		<!-- 切换结束 -->
+		<!-- 图片结束 -->
+	</div>
+	<!-- 个人中心结束 -->
+
+	<!-- 广告开始 -->
+	<div id="advertisement">
+		
+	</div>
+	<!-- 广告结束 -->
+
+	<!-- 底部开始 -->
+	<div id="footer">
+		<div class="wrapper footer_link">
+			<dl>
+				<dt>天天看看</dt>
+			    <dd><a href="" target="_blank">关于我们</a></dd>
+			    <dd><a href="" target="_blank">加入看看</a></dd>
+			    <dd><a href="" target="_blank">联系我们</a></dd>
+			</dl>
+			<dl>
+				<dt>服务</dt>
+			    <dd><a href="" target="_blank">客服中心</a></dd>
+			    <dd><a href="" target="_blank">广告服务</a></dd>
+			    <dd><a href="" target="_blank">意见反馈</a></dd>
+			</dl>
+			<dl>
+				<dt>帮助</dt>
+			    <dd><a href="" target="_blank">免责声明</a></dd>
+			    <dd><a href="" target="_blank">用户协议</a></dd>
+			    <dd><a href="" target="_blank">举报专区</a></dd>
+			</dl>
+			<dl>
+				<dt>软件下载</dt>
+			    <dd><a href="" target="_blank">响巢看看</a></dd>
+			    <dd><a href="" target="_blank">明星空间</a></dd>
+			    <dd><a href="" target="_blank">看看影音</a></dd>
+			</dl>
+		</div>	
+		<div class="wrapper">
+			<ul>
+				<li><img src="./images/footer/icp_2.png"><a href="" target="_blank">互联网违法和不良信息举报中心</a></li>
+				<li><a href="" target="_blank">信息网络传播视听许可证1908323号</a></li>
+				<li><a href="" target="_blank">广播电视节目制作经营许可证（粤）字第01738号</a></li>
+				<li><img src="./images/footer/icp_3.png"><a href="" target="_blank">互联网文化经营单位</a></li>
+				<li><a href="" target="_blank">增值电信业务经营许可证粤B2-20050219号</a></li>
+				<li><a href="" target="_blank">互联网出版许可证新出网证（粤）字053号</a></li>
+				<li><img src="./images/footer/icp_4.png"><a href="" target="_blank">深圳市市场监督管理局（工商网监）</a></li>
+				<li><a href="" target="_blank">备案号: 粤ICP备15049026号</a></li>
+				<li><a href="" target="_blank">网络文化经营许可证粤网文[2016]5612-1340号</a></li>
+				<li><a href="" target="_blank">互联网药品信息服务资格证书（粤）-非经营性-2016-0165</a></li>
+			</ul>
+		</div>
+	
+		<span>Copyright &copy; 2003-2017 Kankan.com 版权所有不良信息举报电话：0755-88111710</span>
+
+	</div>
+	<!-- 底部结束 -->
+</body>
+</html>
